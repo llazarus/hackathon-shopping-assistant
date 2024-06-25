@@ -5,7 +5,6 @@ import logo from "../../Images/avatar.jpeg";
 import serverUrl from "../../Constants/serverUrl";
 import ProductCard from "./ProductCard";
 import SummaryCard from "./SummaryCard";
-import clothImages from '../../Constants/ClothImages'
 import sunglassesData from '../../Constants/SunglassesData'
 class Chat extends Component {
 
@@ -79,12 +78,6 @@ class Chat extends Component {
                 response.payload.push(sunglassesData[(sunglassesIndex+num)%len]);
               })
               this.setState({sunglassesIndex: sunglassesIndex+3});
-            } else if(response.product==="cloth") {
-              ([0,1,2]).forEach((num) => {
-                const len=clothImages.length;
-                response.payload.push(clothImages[(clothIndex+num)%len]);
-              })
-              this.setState({clothIndex: clothIndex+3});
             } else {
               addResponseMessage('Sorry, I have shown you all the available products.');        
             }
@@ -95,13 +88,7 @@ class Chat extends Component {
                   (glasses) => response.preferred.some(
                     (preferred_code)=>preferred_code===glasses.code)
                   );
-              }
-              else {
-                response.payload=clothImages.filter(
-                  (cloth) => response.preferred.some(
-                    (preferred_id)=>preferred_id===cloth.productId)
-                  );
-              }
+              }              
             }
             }
             if(response.payload.length === 1) {

@@ -31,11 +31,6 @@ const useStyles = makeStyles(theme => ({
 
 const uiOptions = [
   {
-    text: 'Clothes Try-on',
-    links: ['/try/cloth'],
-    link: "/try/cloth"
-  },
-  {
     text: 'Sunglasses Try-on',
     links: ['/try/sunglasses'],
     link: "/try/sunglasses"

@@ -11,7 +11,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
 from recommender.sunglasses_recommendor import recommend_sunglasses
-from recommender.clothes_recommendor import recommend_cloth
 
 def download_ntlk_stopwords():
     try:
@@ -85,8 +84,6 @@ def match(user_response):
         if(resp_json['type']=='suggestion'):
             if(resp_json['product']=='sunglasses'):
                 resp_json['preferred']=recommend_sunglasses()
-            else:
-                resp_json['preferred']=recommend_cloth()
         return resp_json
 
 ## Fetching questions

@@ -33,7 +33,7 @@ function Home(props) {
   <Grid item>
   <FeatureCard
     title="Virtual trial room"
-    description="Allows you to virtually try on various clothes, sunglasses, etc. and check how they look on you."
+    description="Allows you to virtually try on various sunglasses and check how they look on you."
     icon={<ReplayIcon fontSize="large"/>}
   />  
   </Grid>

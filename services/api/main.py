@@ -20,6 +20,7 @@ app.mount("/Database", StaticFiles(directory="Database"), name="Database")
 origins = [
     "http://localhost",
     "http://localhost:3000",
+    "*"
 ]
 
 app.add_middleware(
