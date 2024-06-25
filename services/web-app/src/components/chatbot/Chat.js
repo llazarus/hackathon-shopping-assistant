@@ -105,7 +105,7 @@ class Chat extends Component {
               props.title=props.caption;
             }
             if(!props.link) {
-              props.link='https://amazon.com'
+              props.link='https://www.zennioptical.com/'
             }
             if(response.product==="sunglasses") {
               props.trialLink=`/try/sunglasses?product_code=${props.code}`;
