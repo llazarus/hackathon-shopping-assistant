@@ -7,6 +7,7 @@ import {
 } from '@material-ui/core/styles';
 import { blue } from '@material-ui/core/colors';
 import SunglassesTryOn from './SunglassesTryOn';
+import VirtualTryOn from './VirtualTryOn';
 import { useLocation } from "react-router-dom";
 
 export const themeColor = blue[700];
@@ -101,6 +102,7 @@ function ClothesPreview() {
   });
   const { pathname, search } = useLocation();  
   const productCode=new URLSearchParams(search).get('product_code')  
+  const imageUrl=new URLSearchParams(search).get('try_on')  
   const classes = useStyles();
 
   return (
@@ -108,7 +110,8 @@ function ClothesPreview() {
     <div className={classes.root}>
       <CssBaseline />
     </div>
-    <SunglassesTryOn classes={classes} theme={theme} pathname={pathname} productCode={productCode}/>
+    {/* <SunglassesTryOn classes={classes} theme={theme} pathname={pathname} productCode={productCode}/> */}
+    <VirtualTryOn glassesSrc={imageUrl} />
   </MuiThemeProvider>    
   );
 }

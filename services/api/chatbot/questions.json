@@ -12,6 +12,7 @@
     [
       {
         "img":"https://static.zennioptical.com/production/products/general/JA/C4/JAC47814-eyeglasses-front-view.jpg",
+        "tryOn": "jac47814.png",
         "title":"Marc Jacobs MARC 478 Sunglasses",
         "code":"rayban_andy_noir_vert_classique",
         "price":"$119.99",
@@ -19,6 +20,7 @@
       },
       {
         "img":"https://static.zennioptical.com/production/products/general/JA/R1/JAR100219-sunglasses-front-view.jpg",
+        "tryOn": "jar100219.png",
         "title":"Marc Jacobs MARC 1002",
         "code":"rayban_round_cuivre_pinkBrownDegrade",
         "price":"$194.99",
@@ -76,6 +78,7 @@
     [
       {
         "img":"https://static.zennioptical.com/production/products/general/JA/C4/JAC47814-eyeglasses-front-view.jpg",
+        "tryOn": "jac47814.png",
         "title":"Marc Jacobs MARC 478 Sunglasses",
         "code":"rayban_boyfriend_noir_gris_classique",
         "price":"$119.99",
@@ -83,6 +86,7 @@
       },
       {
         "img":"https://static.zennioptical.com/production/products/general/JA/R1/JAR100219-sunglasses-front-view.jpg",
+        "tryOn": "jar100219.png",
         "title":"Marc Jacobs MARC 1002",
         "code":"rayban_erika_havaneGun_marronDegrade",
         "price":"$194.99",

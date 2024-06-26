@@ -108,7 +108,7 @@ class Chat extends Component {
               props.link='https://www.zennioptical.com/'
             }
             if(response.product==="sunglasses") {
-              props.trialLink=`/try/sunglasses?product_code=${props.code}`;
+              props.trialLink=`/try/sunglasses?try_on=${props.tryOn}`;
             } else if(response.product==="cloth") {
               props.height='200px';
               props.width='150px';
