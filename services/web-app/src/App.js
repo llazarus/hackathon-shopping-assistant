@@ -7,15 +7,11 @@ import {
 } from "react-router-dom";
 import Home from './components/Home';
 import SunglassesPreview from './components/SunglassesPreview';
-import ClothesPreview from './components/ClothesPreview';
 
 function App() {
   return (
     <Router>
      <Switch>
-     <Route path="/try/cloth">
-       <ClothesPreview/>
-     </Route>              
      <Route path="/try/sunglasses">
        <SunglassesPreview/>
      </Route>       
