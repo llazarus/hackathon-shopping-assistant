@@ -20,7 +20,7 @@ class Chat extends Component {
   }
 
   componentDidMount() {
-    addResponseMessage('Hope you are fine. Feel free to ask me anything related to any product. I will try my best to help you out.');    
+    addResponseMessage('Hi! Feel free to ask me anything related to any product. I will try my best to help you out.');    
   }
 
   handleNewUserMessage = newMessage => {

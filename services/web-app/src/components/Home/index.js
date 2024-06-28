@@ -4,25 +4,20 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import FeatureCard from './FeatureCard';
 import PersonIcon from '@material-ui/icons/Person';
-import SpeakerNotesIcon from '@material-ui/icons/SpeakerNotes';
 import ReplayIcon from '@material-ui/icons/Replay';
 
 function Home(props) {
-  return <div style={{justifyContent:'center',textAlign: 'center',  backgroundImage:`url('/shopping.jpg')`,minHeight: '100vh'}}>
+  return <div style={{justifyContent:'center', textAlign: 'center', minHeight: '100vh', background: '#007b8f'}}>
 <br/>
-<Typography variant="h4" component="h2" style={{color: 'white'}}>
-  Shopping Assistant
+<Typography variant="h4" component="h2" style={{color: 'white', fontFamily: 'Tabac G1 Bold', fontSize: '3rem'}}>
+  AI Shopping Assistant
 </Typography>
-<br/>
-<Typography variant="h6" component="h2" style={{color: 'white'}}>
-  by Team Salesperson
-</Typography>
-<br/><br/><br/><br/><br/>
+<br/><br/>
 <Typography variant="h5" component="h2" style={{color: 'white'}}>
   Our Features
 </Typography>
 <br/><br/>
-<Grid container direction="row" justify="space-around">
+<Grid container direction="row" justify="space-evenly">
   <Grid item>
   <FeatureCard
     title="A virtual salesperson"
@@ -33,17 +28,10 @@ function Home(props) {
   <Grid item>
   <FeatureCard
     title="Virtual trial room"
-    description="Allows you to virtually try on various clothes, sunglasses, etc. and check how they look on you."
+    description="Allows you to virtually try on various sunglasses and check how they look on you."
     icon={<ReplayIcon fontSize="large"/>}
   />  
-  </Grid>
-  <Grid item>
-  <FeatureCard
-    title="Summarized reviews"
-    description="Prevents you from doing the tedious job of going through numerous reviews of a product."
-    icon={<SpeakerNotesIcon fontSize="large"/>}
-  />  
-  </Grid>  
+  </Grid> 
 </Grid>
 
     <Chat/>
